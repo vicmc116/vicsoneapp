@@ -1,0 +1,319 @@
+/* "font-weight: bold;" */
+body {
+  background-image: url('img/electronic.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+div.top {
+  background: rgba(37, 62, 132, 0.6);
+  height: 130px;
+  width: 90%;
+  border-radius: 16px;
+  padding-left: 10px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
+border: 1px solid rgba(255, 255, 255, 0.91);
+}
+#myDIV {
+  animation: mymove 4s infinite;
+}
+@keyframes mymove {
+  50% {text-shadow: 50px 20px 30px white;}
+}
+.br {
+    height: 15px;
+ }
+.br1 {
+    height: 1px;
+ }
+.br2 {
+    height: 2px;
+ }
+.br3 {
+    height: 3px;
+ }
+.br4 {
+    height: 4px;
+ }
+.br5 {
+    height: 5px;
+ }
+.br10 {
+    height: 10px;
+ }
+.br12 {
+    height: 12px;
+ }
+.button5{
+ font-size: 15px;
+ font-family: 'Roboto', sans-serif;
+ background:rgba(37, 62, 132, 0);
+ color:#ffffff;
+ border: 0px solid rgba(37, 62, 132, 0);
+  }
+.button5:hover {
+background-color:#ffffff;/*black*/
+ color: black;
+ border: 1px solid black;
+}
+.button6{
+ font-size: 15px;
+ font-family: 'Roboto', sans-serif;
+ background:white;
+ color:#000000;
+ border: 1px solid black;
+  }
+.button6:hover {
+background-color:#000000;/*black*/
+ color: white;
+ border: 1px solid black;
+}
+ /* 2 img resizebox */
+ * {
+  box-sizing: border-box;
+}
+.columna {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+ /* end 2 img resizebox */
+* {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+  border: #000000 1px;
+  border-right-style: solid;
+  border-left-style: solid;
+}
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+ /* end 3 img resizebox */
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #dd0f76;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: steelblue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: gold;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.h1 {
+  font-size: 47px;
+  }
+.h2 {
+  color: darkblue;
+  text-shadow: 1px 0px 2px #000000;
+  font-size: 23px;
+}
+.h3 {
+  color: black;
+  text-shadow: 1px 0px 2px #000000;
+  font-size: 40px;
+}
+.s2 {
+  font-size: 20px;
+  text-shadow: 1px 0px 2px #000000;
+  font-family: 'Roboto', sans-serif;
+}
+.t1 {
+  color: black;
+  text-shadow: 1px 0px 2px #000000;
+  font-size: 30px;
+}
+.tbl0_1 {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  width: 90%;
+  border-radius: 15px;
+  padding-top: 3px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border:3px solid black;,
+  }
+.tbl0_2 {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  text-align:left;
+  background-color: #ffffff;
+  width: 90%;
+  border-radius: 15px;
+  padding-top: 3px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border:3px solid black;,
+  }
+.h1a {
+  font-size: 16px;
+}
+.footer {
+  font-size: 15px;
+  color: darkblue;
+  font-family: 'Roboto', sans-serif;
+  width: 40%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  }
+.card {
+  box-shadow: 0 0 7px 0 ;
+  backdrop-filter: blur(5px);
+  border-radius: 16px;
+  <!--margin: 100px; according to your need-->
+}
+
+
+/* --- End Site css - Begin Dropdown Menu --- */
+/* --- End Site css - Begin Dropdown Menu --- */
+/* --- End Site css - Begin Dropdown Menu --- */
+
+
+
+.menu {
+	font-family: "Trebuchet MS", Arial, san-serif;
+	position:relative;
+	z-index:1000;
+}
+.menu ul li a {
+	display:block;
+	text-decoration:none;
+	color:#fff;
+	height:35px;
+	text-align:center;
+	border-bottom: 0;
+	line-height:20px;
+	font-size:16px;
+	overflow:hidden;
+	padding-left: 5px;
+}
+/* --------------------------------------End Caps Styling */
+.menu .left_nosub {
+	padding-left: 0px;
+	margin-right: 0px;
+}
+.menu ul {padding:0; margin:0; list-style: none;}
+.menu ul li {float:left; position:relative;}
+.menu ul li ul {display: none;}
+
+/* -----------------------------------Button ":hover" Styling */
+.menu ul li:hover ul {display:block; position:absolute; top:35px; left:1; width:240px;}
+.menu ul li:hover ul li a.center_hassub {background:#6a3; color:#fff;}
+.menu ul li:hover ul li:hover a.center_hassub {background:#6fc; color:#544a3a;}
+.menu ul li:hover ul li ul {display: none;}
+
+/* ----------------------------------DropDown Styling */
+
+.menu ul li:hover ul li a {background-image: none; display:block; height: 33px; line-height: 26px; color:#043454; width:220px; text-align:left; margin: 0; padding:0 0 0 11px; font-weight:normal;}
+.menu ul li:hover ul {
+	margin: 0 0 0 3px;
+	padding: 20;
+	background-image:url('images/blue/dropdown.jpg');
+	background-repeat:no-repeat;
+	background-position:bottom left;
+}
+
+/* ---------------------------------DropDown Menus ":active" or "Selected" Styling */
+.menu ul li:hover ul .sub_active {
+	background-image:url('images/blue/sub_active.png');
+	margin-right: 1px;
+}
+
+/* -----------------------------------DropDown Menus ":hover" Styling */
+.menu ul li:hover ul li a:hover {color:#fff; background-image:url('images/blue/sub_hover.png');}
+.menu ul li:hover ul li:hover ul {display:block; position:absolute; left:15px; top:0;}
+.menu ul li:hover ul li:hover ul.left {left:-105px;}
+
+/* ------------------------------ End Menu - begin gototop -- */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: 2px;
+  outline: solid;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 25px;
+}
+#myBtn:hover {
+  background-color: #555;
+}
+
+/* ------------------------- End gototop - begin friendswrapper -- */
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3px;
+  row-gap: 1em;
+  border: solid #ffffff 0px;
+}
+.wrapper2 {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  padding-top: 3px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border:3px solid black;,
+}
+
+/* ----------------------- End friendswrapper - begin codecopy -- */
+
+  div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: rgba(232, 238, 252, 0.9);
+  padding: 5px;
+  font-size: 20px;
+}
+.copy {
+  cursor: copy;
+}
+/* "font-weight: bold;"  */
+pre {
+  display: inline-block;
+  border: 2px solid red;
+  border-radius: 25px;
+  white-space: pre-wrap;
+  cursor: copy;
+  padding: 14px;
+}
+div.c {
+  white-space: pre;
+}

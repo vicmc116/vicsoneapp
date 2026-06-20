@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test Purchase</title>
+</head>
+<body>
+
+  <h2>Stripe Test Purchase</h2>
+
+  <input id="email" placeholder="email" />
+
+  <button onclick="buy()">Buy Test License</button>
+
+  <script>
+    async function buy() {
+      const email = document.getElementById("email").value;
+
+      const res = await fetch("/.netlify/functions/create-checkout-session", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ email })
+      });
+
+      const data = await res.json();
+
+      window.location.href = data.url;
+    }
+  </script>
+
+</body>
+</html>

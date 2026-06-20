@@ -1,0 +1,489 @@
+<html>
+<head>
+<style>
+.floating-menu {
+  position: fixed;
+  top: 100px;       /* Distance from top */
+  left: 20px;     /* Distance from right */
+  z-index: 999;    /* Keeps it above other content */
+  background: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+</style>
+	<title>Tech website Computer repair</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="CodeTechNC, computer help, computer tech, fixing computers"/>
+	<meta name="description" content="Computer repair shop - Techs website, video and computer drivers, computer fixes, and software">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+   	<link rel="stylesheet" href="site.css" media="screen">
+	<link rel="stylesheet" href="iconl.css" media="screen">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="copy.js"></script>
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<!-- Menu -->
+<div class="floating-menu" align="left">
+<a href="main.htm">One</a><BR>
+<a href="settings.htm">Settings</a><BR>
+<a href="scans.htm">Scans</a><BR>
+<a href="startup.htm">StartUps</a><BR>
+<a href="hardware.htm">Hardware</a><BR>
+<a href="software.htm">Software</a><BR>
+<a href="quik.htm">QuikFix</a><BR>
+<a href="system.htm">System Tools</a><br>
+<a href="tools.htm">Tools</a><br>
+</div><!-- Menu -->
+	<div class="card card-body" style="justify-content: left">
+	<center><br>
+<!-- Window two -->
+<div style="width: 800px; background: white; font-size: 16px; text-align: left; border-radius: 45px; border: 2px solid orange; padding: 20px; box-shadow: 10px 10px 10px 10px gray;">
+    <table style="width: 100%; text-align: left;"><tr>
+            <td style="padding: 10px;">
+                <img src="img/1-aa.jpg">&nbsp;&nbsp;<img src="img/1-tools.jpg">
+            </td>
+
+            <td style="padding: 5px;">
+<div class="c" style="width: 276px; overflow: auto; font-family: Arial, sans-serif; color: black;">
+<h2 style="color: navy;">Vics One app TechTool 
+Tools Window</h2>
+1: <a href="#section-1">Wireless Passwords</a>
+2: <a href="#section-2">Reset WiFi C*</a>
+3: <a href="#section-3">Restore Photo Viewer</a>
+4: <a href="#section-4">Reset Printer Spool</a>
+5: <a href="#section-5">Reset/Repair Updates</a>
+6: <a href="#section-6">Turn off Updates</a>
+7: <a href="#section-7">Power Button ShutDown</a>
+8: <a href="#section-8">CriticalBattery Action</a><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+</div>
+            </td></tr></table>
+</div>
+<br>=========================================<br><h2 id="section-1"></h2>
+
+<!-- Window 1 -->
+<div style="width: 800px; background: white; font-size: 16px; text-align: left; border-radius: 45px; border: 2px solid orange; padding: 5px; box-shadow: 10px 10px 10px 10px gray;">
+    <table style="width: 100%; text-align: left;"><tr>
+            <td style="padding: 10px;">   <br><br><br>
+                &emsp;&emsp;  <img src="img/1-tools.jpg">
+            </td>
+<td style="padding: 10px;"></td>
+            <td style="padding: 10px;">
+<div class="c" style="width: 500px; overflow: auto; font-family: Arial, sans-serif; color: black;">
+<h2 style="color: navy;">Vics One app TechTool
+1- Wireless Passwords</h2><b>Import and Export
+Wireless Passwords</b><br>
+The command 
+netsh wlan export profile folder="%~dp0\wifi\" key=clear 
+is a Windows batch script instruction used to backup all saved Wi-Fi 
+profiles on a computer to a specific folder, while revealing their 
+passwords in plain text.
+<br><br><center><img src="img/1-toz_wirelessp.jpg"></center>
+<br>
+</div></td></tr></table>
+<div class="c">      SCRIPTS:<br><a href = "javascript:void(0)" tooltip = "Script Copied!"><pre class="js-click-to-copy-text">    ::Export Wireless Passwords
+	MD %~dp0\wifi\
+	netsh wlan export profile folder="%~dp0\wifi\" key=clear
+	pause
+
+    ::Import Wireless Passwords
+	FORFILES /P "%~dp0wifi" /M *.xml /C "cmd /c netsh wlan add profile filename=@path"
+	pause</pre></a>
+</div>
+</div>
+<br>=========================================<h2 id="section-2"></h2>
+
+<!-- Window 2 -->
+<div style="width: 800px; background: white; font-size: 16px; text-align: left; border-radius: 45px; border: 2px solid orange; padding: 5px; box-shadow: 10px 10px 10px 10px gray;">
+    <table style="width: 100%; text-align: left;"><tr>
+            <td style="padding: 10px;"> <BR><BR>
+                &emsp; &emsp; <img src="img/1-tools.jpg">&emsp;&emsp;
+            </td>
+<td style="padding: 10px;"></td>
+            <td style="padding: 10px;">
+<div class="c" style="width: 500px; overflow: auto; font-family: Arial, sans-serif; color: black;">
+<h2 style="color: navy;">Vics One app TechTool
+2- Reset WiFi C*</h2>Setup WIFI Connect to work with your shops wireless Internet
+
+Connect to a computer that already has the wireless password
+setup and set for auto connect, if none available then go 
+ahead and set yours up now. Important to check box to connect
+automatically when setting up the password, Once setup return 
+to TechTool/Tools/*Reset WIFI C* When pressed two options appear
+
+1-Delete old passwords 
+(Removes old wireless profiles stored)
+2-Import Wireless Profiles 
+(Imports the wireless password you just setup with auto connect)
+
+Important Note: this creates a wifi-s folder in the same directory
+as TechTool, this stores the wifi profiles that are used and the 
+folder should be kept with the main program for WIFI Connect to 
+work correctly.<br><br><center><img src="img/1-toz_wireless_c.jpg"></center>
+
+</div>
+            </td></tr></table>
+</div>
+<br>=========================================<br><h2 id="section-3"></h2>
+
+<!-- Window 3 -->
+<div style="width: 800px; background: white; font-size: 16px; text-align: left; border-radius: 45px; border: 2px solid orange; padding: 5px; box-shadow: 10px 10px 10px 10px gray;">
+    <table style="width: 100%; text-align: left;"><tr>
+            <td style="padding: 10px;">
+                &emsp; &emsp;  <img src="img/1-tools.jpg">&emsp;&emsp;
+            </td>
+<td style="padding: 10px;"></td>
+            <td style="padding: 10px;">
+<div class="c" style="width: 500px; overflow: auto; font-family: Arial, sans-serif; color: black;">
+<h2 style="color: navy;">Vics One app TechTool
+3- Restores Photo Viewer</h2>To use the lightning-fast classic Windows Photo Viewer on
+Windows 10 or 11, you must activate it via the registry.
+Microsoft leaves the underlying program engine (PhotoViewer.dll) 
+hidden inside clean installations. It only associates it 
+with .tif files by default.<BR><br>
+<img src="img/1-toz_photview.jpg"><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+            </td></tr></table>
+</div>
+
+<br>=========================================<br><h2 id="section-4"></h2>
+
+<!-- Window 4 -->
+<div style="width: 800px; background: white; font-size: 16px; text-align: left; border-radius: 45px; border: 2px solid orange; padding: 5px; box-shadow: 10px 10px 10px 10px gray;">
+    <table style="width: 100%; text-align: left;"><tr>
+            <td style="padding: 10px;">
+                &emsp; &emsp;  <img src="img/1-tools.jpg">&emsp;&emsp;
+            </td>
+<td style="padding: 10px;"></td>
+            <td style="padding: 10px;">
+<div class="c" style="width: 500px; overflow: auto; font-family: Arial, sans-serif; color: black;">
+<h2 style="color: navy;">Vics One app TechTool
+4- Reset Printer Spool</h2>Reset the Windows Printer Spooler, Clear the stuck print queue
+files from your system storage and restart the spooler service.
+<BR><img src="img/1-toz_resetprint.jpg"><br><br>
+</div>
+            </td></tr></table>
+<div class="c"> Resets Print Spooler 
+<a href = "javascript:void(0)" tooltip = "Script Copied!"><pre class="js-click-to-copy-text">
+@ECHO.
+@ECHO   ====-----------------------------------------------====
+@ECHO             PrintStop2 - Vics TechTool
+@ECHO  Stops Printer spool Deletes cashe Restarts Printer Spool
+@ECHO   ====-----------------------------------------------====
+@ECHO.
+@net  stop  spooler
+@takeown  /F  %SystemRoot%\System32\Spool\Printers  /R
+@icacls  %SystemRoot%\System32\Spool\Printers  /T  /Grant Everyone:F
+@c:
+@cd %SystemRoot%\system32\spool\printers\
+@ECHO.
+@ECHO =====================================================
+@ECHO             PrintStop2 - Vics TechTool
+@ECHO    Deleting cashe - Restarting Printer Spool
+@ECHO =====================================================
+@ECHO.
+@del  /S /Q  %SystemRoot%\System32\Spool\Printers\*.*
+@net  start  spooler
+pause
+</pre></a></div>
+</div>
+<br>=========================================<br><h2 id="section-5"></h2>
+
+<!-- Window 5 -->
+<div style="width: 800px; background: white; font-size: 16px; text-align: left; border-radius: 45px; border: 2px solid orange; padding: 5px; box-shadow: 10px 10px 10px 10px gray;">
+    <table style="width: 100%; text-align: left;"><tr>
+            <td style="padding: 10px;">
+                &emsp; &emsp;  <img src="img/1-tools.jpg">&emsp;&emsp;
+            </td>
+<td style="padding: 10px;"></td>
+            <td style="padding: 10px;">
+<div class="c" style="width: 500px; overflow: auto; font-family: Arial, sans-serif; color: black;">
+<h2 style="color: navy;">Vics One app TechTool
+5- Reset/Repair Windows Updates</h2><img src="img/1-toz_winupfix.jpg"><BR><BR>
+</div>
+            </td></tr></table>
+<div> Resets Windows Updates. Script from MS.com <a href = "javascript:void(0)" tooltip = "Script Copied!"><pre class="js-click-to-copy-text"> ::SCRIPT:  
+    ::Repair Updates
+    ::(Script from Microsoft.com)
+
+@echo off
+echo .echo Simple script to reset windows update-Credits to shawn Brink for the commandsecho .echo PAUSE
+
+
+
+set b=0
+
+:bits
+set /a b=%b%+1
+if %b% equ 3 (
+   goto end1
+) 
+net stop bits
+echo Checking the bits service status.
+sc query bits | findstr /I /C:"STOPPED" 
+if not %errorlevel%==0 ( 
+    goto bits 
+) 
+goto loop2
+
+:end1
+cls
+echo.
+echo Failed to reset Windows Update due to bits service failing to stop.
+echo.
+pause
+goto Start
+
+
+:loop2
+set w=0
+
+:wuauserv
+set /a w=%w%+1
+if %w% equ 3 (
+   goto end2
+) 
+net stop wuauserv
+echo Checking the wuauserv service status.
+sc query wuauserv | findstr /I /C:"STOPPED" 
+if not %errorlevel%==0 ( 
+    goto wuauserv 
+) 
+goto loop3
+
+:end2
+cls
+echo.
+echo Failed to reset Windows Update due to wuauserv service failing to stop.
+echo.
+pause
+goto Start
+
+
+
+:loop3
+set app=0
+
+:appidsvc
+set /a app=%app%+1
+if %app% equ 3 (
+   goto end3
+) 
+net stop appidsvc
+echo Checking the appidsvc service status.
+sc query appidsvc | findstr /I /C:"STOPPED" 
+if not %errorlevel%==0 ( 
+    goto appidsvc 
+) 
+goto loop4
+
+:end3
+cls
+echo.
+echo Failed to reset Windows Update due to appidsvc service failing to stop.
+echo.
+pause
+goto Start
+
+
+:loop4
+set c=0
+
+:cryptsvc
+set /a c=%c%+1
+if %c% equ 3 (
+   goto end4
+) 
+net stop cryptsvc
+echo Checking the cryptsvc service status.
+sc query cryptsvc | findstr /I /C:"STOPPED" 
+if not %errorlevel%==0 ( 
+    goto cryptsvc 
+) 
+goto Reset
+
+:end4
+cls
+echo.
+echo Failed to reset Windows Update due to cryptsvc service failing to stop.
+echo.
+pause
+goto Start
+
+
+:Reset
+Ipconfig /flushdns
+
+cd /d %windir%\system32
+
+if exist "%SYSTEMROOT%\winsxs\pending.xml.bak" del /s /q /f "%SYSTEMROOT%\winsxs\pending.xml.bak" 
+if exist "%SYSTEMROOT%\winsxs\pending.xml" ( 
+    takeown /f "%SYSTEMROOT%\winsxs\pending.xml" 
+    attrib -r -s -h /s /d "%SYSTEMROOT%\winsxs\pending.xml" 
+    ren "%SYSTEMROOT%\winsxs\pending.xml" pending.xml.bak 
+) 
+  
+if exist "%SYSTEMROOT%\SoftwareDistribution.bak" rmdir /s /q "%SYSTEMROOT%\SoftwareDistribution.bak"
+if exist "%SYSTEMROOT%\SoftwareDistribution" ( 
+    attrib -r -s -h /s /d "%SYSTEMROOT%\SoftwareDistribution" 
+    ren "%SYSTEMROOT%\SoftwareDistribution" SoftwareDistribution.bak 
+) 
+ 
+if exist "%SYSTEMROOT%\system32\Catroot2.bak" rmdir /s /q "%SYSTEMROOT%\system32\Catroot2.bak" 
+if exist "%SYSTEMROOT%\system32\Catroot2" ( 
+    attrib -r -s -h /s /d "%SYSTEMROOT%\system32\Catroot2" 
+    ren "%SYSTEMROOT%\system32\Catroot2" Catroot2.bak 
+) 
+  
+if exist "%SYSTEMROOT%\WindowsUpdate.log.bak" del /s /q /f "%SYSTEMROOT%\WindowsUpdate.log.bak" 
+if exist "%SYSTEMROOT%\WindowsUpdate.log" ( 
+    attrib -r -s -h /s /d "%SYSTEMROOT%\WindowsUpdate.log" 
+    ren "%SYSTEMROOT%\WindowsUpdate.log" WindowsUpdate.log.bak 
+) 
+  
+sc.exe sdset bits D:(A;;CCLCSWRPWPDTLOCRRC;;;SY)(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;BA)(A;;CCLCSWLOCRRC;;;AU)(A;;CCLCSWRPWPDTLOCRRC;;;PU)
+sc.exe sdset wuauserv D:(A;;CCLCSWRPWPDTLOCRRC;;;SY)(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;BA)(A;;CCLCSWLOCRRC;;;AU)(A;;CCLCSWRPWPDTLOCRRC;;;PU)
+
+regsvr32.exe /s atl.dll 
+regsvr32.exe /s urlmon.dll 
+regsvr32.exe /s mshtml.dll 
+regsvr32.exe /s shdocvw.dll 
+regsvr32.exe /s browseui.dll 
+regsvr32.exe /s jscript.dll 
+regsvr32.exe /s vbscript.dll 
+regsvr32.exe /s scrrun.dll 
+regsvr32.exe /s msxml.dll 
+regsvr32.exe /s msxml3.dll 
+regsvr32.exe /s msxml6.dll 
+regsvr32.exe /s actxprxy.dll 
+regsvr32.exe /s softpub.dll 
+regsvr32.exe /s wintrust.dll 
+regsvr32.exe /s dssenh.dll 
+regsvr32.exe /s rsaenh.dll 
+regsvr32.exe /s gpkcsp.dll 
+regsvr32.exe /s sccbase.dll 
+regsvr32.exe /s slbcsp.dll 
+regsvr32.exe /s cryptdlg.dll 
+regsvr32.exe /s oleaut32.dll 
+regsvr32.exe /s ole32.dll 
+regsvr32.exe /s shell32.dll 
+regsvr32.exe /s initpki.dll 
+regsvr32.exe /s wuapi.dll 
+regsvr32.exe /s wuaueng.dll 
+regsvr32.exe /s wuaueng1.dll 
+regsvr32.exe /s wucltui.dll 
+regsvr32.exe /s wups.dll 
+regsvr32.exe /s wups2.dll 
+regsvr32.exe /s wuweb.dll 
+regsvr32.exe /s qmgr.dll 
+regsvr32.exe /s qmgrprxy.dll 
+regsvr32.exe /s wucltux.dll 
+regsvr32.exe /s muweb.dll 
+regsvr32.exe /s wuwebv.dll
+regsvr32 /s wudriver.dll
+netsh winsock reset
+netsh winsock reset proxy
+
+:Start
+net start bits
+net start wuauserv
+net start appidsvc
+net start cryptsvc
+echo Task completed succesfully! Please restart your computer and check for the updates again.
+PAUSE</pre></a>
+</div>
+</div>
+<br>=========================================<br><h2 id="section-6"></h2>
+
+<!-- Window 6 -->
+<div style="width: 800px; background: white; font-size: 16px; text-align: left; border-radius: 45px; border: 2px solid orange; padding: 5px; box-shadow: 10px 10px 10px 10px gray;">
+    <table style="width: 100%; text-align: left;"><tr>
+            <td style="padding: 10px;">
+                &emsp; &emsp;  <img src="img/1-tools.jpg">&emsp;
+            </td>
+<td style="padding: 10px;"></td>
+            <td style="padding: 10px;">
+<div class="c" style="width: 500px; overflow: auto; font-family: Arial, sans-serif; color: black;">
+<h2 style="color: navy;">Vics One app TechTool
+6- Pause Windows Updates for years </h2><img src="img/1-toz_paupdate.jpg"> <BR>
+</div>
+            </td></tr></table>
+<div><a href = "javascript:void(0)" tooltip = "Script Copied!"><pre class="js-click-to-copy-text">::Turn off Updates -  .reg file
+::(Extends the pause button in updates for many years)
+
+  [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings]
+  "FlightSettingsMaxPauseDays"=dword:00001c84</pre></a>
+</div>
+</div>
+
+   <br>=========================================<br><h2 id="section-7"></h2>
+
+<!-- Window 7 -->
+<div style="width: 800px; background: white; font-size: 16px; text-align: left; border-radius: 45px; border: 2px solid orange; padding: 5px; box-shadow: 10px 10px 10px 10px gray;">
+    <table style="width: 100%; text-align: left;"><tr>
+            <td style="padding: 10px;">
+                &emsp; &emsp;  <img src="img/1-tools.jpg">&emsp;
+            </td>
+<td style="padding: 10px;"></td>
+            <td style="padding: 5px;">
+<div class="c" style="width: 500px; overflow: auto; font-family: Arial, sans-serif; color: black;">
+<h2 style="color: navy;">Vics One app TechTool
+7- Power Button Shut Down</h2>
+<B>If External Drives are bitlocked
+Keys will be stored on the C: drive</B><br><br>
+<img src="img/1-toz_powershutdown.jpg"><br><br>
+</div>
+            </td></tr></table>
+<div> 1 Button Shut Down
+ - Pressing power Button Turns off Computer <a href = "javascript:void(0)" tooltip = "Script Copied!"><pre class="js-click-to-copy-text">	echo:
+    powercfg /setacvalueindex SCHEME_CURRENT 4f971e89-eebd-4455-a8de-9e59040e7347 7648efa3-dd9c-4e3e-b566-50f929386280 3
+	echo:
+    powercfg /setdcvalueindex SCHEME_CURRENT 4f971e89-eebd-4455-a8de-9e59040e7347 7648efa3-dd9c-4e3e-b566-50f929386280 3
+	pause</pre></a>
+</div>
+</div>
+
+        <br>=========================================<br><h2 id="section-8"></h2>
+<!-- Window 8 -->
+<div style="width: 800px; background: white; font-size: 16px; text-align: left; border-radius: 45px; border: 2px solid orange; padding: 5px; box-shadow: 10px 10px 10px 10px gray;">
+    <table style="width: 100%; text-align: left;"><tr>
+            <td style="padding: 10px;">
+                &emsp; &emsp;  <img src="img/1-tools.jpg">&emsp; &emsp;
+            </td>
+<td style="padding: 10px;"></td>
+            <td style="padding: 10px;">
+<div class="c" style="width: 500px; overflow: auto; font-family: Arial, sans-serif; color: black;">
+<h2 style="color: navy;">Vics One app TechTool
+8- Critical Battery Action Off</h2>Critical Battery Action - Power Management setting, if plugged up
+or on battery if low battery will hibernate  - change to if plugged 
+up do not hibernate<BR>
+ <img src="img/1-toz_critbatt.jpg">
+<BR><BR><BR>
+</div>
+            </td></tr></table>
+<div>. -  Critical Battery Action Off <a href = "javascript:void(0)" tooltip = "Script Copied!"><pre class="js-click-to-copy-text">echo
+powercfg -setdcvalueindex SCHEME_CURRENT SUB_BATTERY BATACTIONCRIT 0 
+pause</pre></a>
+</div>
+</div>
+<br>=========================================<br><br>
+<center><div class="footer">
+<div style="width: 300px; background: white; font-size: 16px; text-align: left; border-radius: 45px; border: 2px solid orange; box-shadow: 10px 10px 10px 10px gray;"><center>
+&copy; <script>document.write(new Date().getFullYear());</script> Victor C.  -  
+Design: Victor C.
+</center></div><br><br>
+</center><BR>
+</div>
+</center>
+</div>
+<div class="br"></div>
+<!-- End table/div 2 --><br><br>
+</div>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+<script class="u-script" type="text/javascript" src="gotop_img.js" defer=""></script>
+</body>
+</html>
