@@ -350,9 +350,8 @@ button.submit{
                     </div>
                     <div>
                         <div class="price">29.95<span> / One-Time Purchase</span></div>
-                        <form action="https://example.com/" method="post" target="_blank">
-                            <button type="submit" class="btn btn-primary">Buy TechTool Pro</button>
-                        </form>
+                        <button onclick="buyNow()">Buy TechTool Pro</button>
+                        
                     </div>
                 </div><br>
             </div></div>
@@ -458,6 +457,22 @@ function showForm(id){
         .forEach(section => section.classList.remove('active'));
     document.getElementById(id)
         .classList.add('active');
+}
+</script>
+
+<script>
+async function buyNow() {
+    const res = await fetch("/.netlify/functions/create-checkout-session", {
+        method: "POST"
+    });
+
+    const data = await res.json();
+
+    if (data.url) {
+        window.location.href = data.url;
+    } else {
+        alert("Unable to start checkout");
+    }
 }
 </script>
 </body>
