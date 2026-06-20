@@ -4,24 +4,7 @@
 <title>Admin Dashboard</title>
 
 <style>
-<script>
-async function checkAdmin() {
-    const password = prompt("Admin password:");
 
-    const res = await fetch("/.netlify/functions/verify-admin", {
-        headers: {
-            authorization: password
-        }
-    });
-
-    if (!res.ok) {
-        document.body.innerHTML = "<h1>Access Denied</h1>";
-        throw new Error("Unauthorized");
-    }
-}
-
-checkAdmin();
-</script>
 body {
   margin: 0;
   font-family: Arial;
@@ -380,6 +363,25 @@ async function loadAudit() {
 loadUsers();
 
 </script>
+<script>
+async function checkAdmin() {
+    const password = prompt("Admin password:");
 
+    const res = await fetch("/.netlify/functions/verify-admin", {
+        headers: {
+            authorization: password
+        }
+    });
+
+    const data = await res.json();
+
+    if (!data.success) {
+        document.body.innerHTML = "<h1>Access Denied</h1>";
+        throw new Error("Unauthorized");
+    }
+}
+
+checkAdmin();
+</script>
 </body>
 </html>
